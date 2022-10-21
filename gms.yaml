@@ -1,0 +1,3 @@
+dependencies:
+  otp_reader:
+    path: local_plugins/gms/otp_reader

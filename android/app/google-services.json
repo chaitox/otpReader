@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1031591138014",
+    "project_id": "otp-gms",
+    "storage_bucket": "otp-gms.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031591138014:android:46ece0f3ae676fdb8ea84f",
+        "android_client_info": {
+          "package_name": "com.py.contratame.otp_validation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031591138014-fl0t78b8tbblv5f7cn79fss5pqapmtro.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjRcBGBxQjQbQtfQPnkeFRyncqAShho2A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1031591138014-fl0t78b8tbblv5f7cn79fss5pqapmtro.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
