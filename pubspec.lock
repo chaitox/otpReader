@@ -145,7 +145,7 @@ packages:
   otp_reader:
     dependency: "direct main"
     description:
-      path: "local_plugins/hms/otp_reader"
+      path: "local_plugins/gms/otp_reader"
       relative: true
     source: path
     version: "0.0.1"

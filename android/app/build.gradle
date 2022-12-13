@@ -76,26 +76,28 @@ android {
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
-    signingConfigs {       
-        release {            
-            storeFile file('huawei.jks')            
-            storePassword '123456'            
-            keyAlias 'accountkitdemo'            
-            keyPassword '123456'        
-        }    
+    signingConfigs {    
+        //TODO: HABILITAR Cuando sea realese   
+        // release {            
+        //     storeFile file('huawei.jks')            
+        //     storePassword '123456'            
+        //     keyAlias 'accountkitdemo'            
+        //     keyPassword '123456'        
+        // }    
     } 
     buildTypes {
-        debug {            
-           signingConfig signingConfigs.release        
-            }       
-            release {            
-                signingConfig signingConfigs.release    
-                 // Enables code shrinking, obfuscation and optimization for release builds
-                minifyEnabled true
-                // Unused resources will be removed.
-                shrinkResources true
-                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'    
-            }    
+        //TODO: HABILITAR Cuando sea realese   
+        // debug {            
+        //    signingConfig signingConfigs.release        
+        //     }       
+        //     release {            
+        //         signingConfig signingConfigs.release    
+        //          // Enables code shrinking, obfuscation and optimization for release builds
+        //         minifyEnabled true
+        //         // Unused resources will be removed.
+        //         shrinkResources true
+        //         proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'    
+        //     }    
     }
 }
 
