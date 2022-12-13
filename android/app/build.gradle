@@ -111,5 +111,8 @@ flutter {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    def taskName = getGradle().getStartParameter().getTaskRequests().toString().toLowerCase();
+    if (taskName.contains("huawei")){
     implementation 'com.huawei.agconnect:agconnect-core:1.5.2.300'
+    }
 }
