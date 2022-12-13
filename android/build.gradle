@@ -8,7 +8,8 @@ buildscript {
     }
 def taskName = getGradle().getStartParameter().getTaskRequests().toString().toLowerCase()
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.1.2'
+        //classpath 'com.android.tools.build:gradle:7.1.2'
+        classpath 'com.android.tools.build:gradle:4.1.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
          if (taskName.contains("google")||taskName.contains("ios")){
             classpath 'com.google.gms:google-services:4.3.10'
