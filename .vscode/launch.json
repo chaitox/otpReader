@@ -27,18 +27,6 @@
                 "--flavor",
                 "google"
             ],
-        },
-        {
-            "name": "ios",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "debug",
-            "preLaunchTask": "googleTask",
-            "program": "lib/main.dart",
-            "args": [
-                "--flavor",
-                "ios"
-            ],
         }
     ]
 }
