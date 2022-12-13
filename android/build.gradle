@@ -2,15 +2,14 @@ buildscript {
     ext.kotlin_version = '1.6.10'
     repositories {
         google()
-        //mavenCentral()
-        maven { url 'https://repo1.maven.org/maven2' }
+        mavenCentral()
         maven { url 'https://developer.huawei.com/repo/' }
     }
 def taskName = getGradle().getStartParameter().getTaskRequests().toString().toLowerCase()
     dependencies {
         classpath 'com.android.tools.build:gradle:7.1.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-         if (taskName.contains("google")||taskName.contains("ios")){
+         if (taskName.contains("google")){
             classpath 'com.google.gms:google-services:4.3.10'
         }
         if (taskName.contains("huawei")){
@@ -22,14 +21,15 @@ def taskName = getGradle().getStartParameter().getTaskRequests().toString().toLo
 allprojects {
     repositories {
         google()
-        //mavenCentral()
-        maven { url 'https://repo1.maven.org/maven2' }
+        mavenCentral()
         maven { url 'https://developer.huawei.com/repo/' }
     }
 }
 
 rootProject.buildDir = '../build'
-
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
 subprojects {
     project.evaluationDependsOn(':app')
 }
