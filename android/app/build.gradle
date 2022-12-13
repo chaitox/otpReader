@@ -108,7 +108,7 @@ android {
 flutter {
     source '../..'
 }
-
+println("Running gradle version: $gradle.gradleVersion");
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     if (taskName.contains("huawei")){
