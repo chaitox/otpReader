@@ -24,7 +24,7 @@ if (flutterVersionName == null) {
 apply plugin: 'com.android.application'
 def taskName = getGradle().getStartParameter().getTaskRequests().toString().toLowerCase();
 
-if (taskName.contains("google")){
+if (taskName.contains("google")||taskName.contains("ios")){
    
     apply plugin: 'com.google.gms.google-services'
 }
@@ -49,6 +49,10 @@ android {
         
             }
             huawei {
+                dimension "store-type"
+               
+            }
+            ios {
                 dimension "store-type"
                
             }
