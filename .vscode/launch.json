@@ -27,84 +27,18 @@
                 "--flavor",
                 "google"
             ],
+        },
+        {
+            "name": "ios",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "preLaunchTask": "googleTask",
+            "program": "lib/main.dart",
+            "args": [
+                "--flavor",
+                "ios"
+            ],
         }
-        /*
-        {
-            "name": "otp_validation",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "otp_validation (profile mode)",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "otp_validation (release mode)",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "otp_reader",
-            "cwd": "local_plugins\\gms\\otp_reader",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "otp_reader (profile mode)",
-            "cwd": "local_plugins\\gms\\otp_reader",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "otp_reader (release mode)",
-            "cwd": "local_plugins\\gms\\otp_reader",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "otp_reader",
-            "cwd": "local_plugins\\hms\\otp_reader",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "otp_reader (profile mode)",
-            "cwd": "local_plugins\\hms\\otp_reader",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "otp_reader (release mode)",
-            "cwd": "local_plugins\\hms\\otp_reader",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "otp_service_interface",
-            "cwd": "local_plugins\\interface\\otp_service_interface",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "otp_service_interface (profile mode)",
-            "cwd": "local_plugins\\interface\\otp_service_interface",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "otp_service_interface (release mode)",
-            "cwd": "local_plugins\\interface\\otp_service_interface",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        }*/
     ]
 }
