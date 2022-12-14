@@ -69,7 +69,7 @@ android {
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
-
+    println("targetSdkVersion: $flutter.targetSdkVersion");
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "com.py.contratame.otp_validation"
